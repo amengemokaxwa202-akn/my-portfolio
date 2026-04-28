@@ -21,7 +21,7 @@ jobs:
         run: pip install flet
       
       - name: Build web app
-        run: flet build web --base-url my-portfolio --route-url-strategy hash
+        run: flet build web --base-url my-portfolio --route-url-strategy hash --yes
       
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
